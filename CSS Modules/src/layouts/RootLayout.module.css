@@ -1,0 +1,126 @@
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 40;
+  padding: 4px 0;
+  width: 100%;
+  min-width: 365px;
+  height: 48px;
+  background-color: white;
+  color: black;
+  box-sizing: border-box;
+}
+
+.header.dark {
+  background-color: var(--secundaryDark);
+  color: white;
+}
+
+.nav {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  margin: 0 40px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navLink img {
+  width: 36px;
+  height: 36px;
+}
+
+.navLink span {
+  font-weight: 600;
+}
+
+.navButtons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.themeToggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 9999px;
+  border: 2px solid #e5e7eb;
+  padding: 4px 8px;
+  font-weight: 600;
+  background-color: #f3f4f6;
+  cursor: pointer;
+}
+
+.themeToggle.dark {
+  border-color: #4b5563;
+  color: #fff;
+  background-color: #374151;
+}
+
+.themeToggle img {
+  width: 30px;
+  height: 30px;
+}
+
+.themeToggle.light img {
+  filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.8));
+}
+
+.themeToggle.dark img {
+  filter: drop-shadow(0 0 8px rgba(125, 211, 252, 0.5));
+}
+
+.cartButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 9999px;
+  border: 0;
+  padding: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 250ms ease;
+}
+
+.cartButton:hover {
+  transform: scale(1.05);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.cartButton.dark {
+  filter: invert(1);
+}
+
+.cartButton img {
+  width: 30px;
+  height: 30px;
+}
+
+.main {
+  margin-top: 48px;
+  padding: 40px 0;
+  min-height: calc(100vh - 48px);
+  background-color: var(--primary);
+  min-width: 365px;
+  box-sizing: border-box;
+}
+
+.main.dark {
+  background-color: var(--primaryDark);
+}

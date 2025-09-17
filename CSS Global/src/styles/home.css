@@ -1,0 +1,29 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(220px, 280px));
+  gap: 1.5rem 1rem;
+  margin: 0 2rem;
+}
+
+@media (max-width: 640px) {
+  .product-grid {
+    grid-template-columns: repeat(1, minmax(220px, 280px));
+  }
+}
+
+@media (max-width: 768px) and (min-width: 641px) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(220px, 280px));
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .product-grid {
+    grid-template-columns: repeat(3, minmax(220px, 280px));
+  }
+}

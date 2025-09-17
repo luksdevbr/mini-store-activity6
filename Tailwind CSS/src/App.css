@@ -1,0 +1,9 @@
+:root {
+  --header-h: 48px;
+}
+
+#root {
+  width: 100vw;
+  min-height: 100dvh;
+}
+
